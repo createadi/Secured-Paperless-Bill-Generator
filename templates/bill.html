@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bill.css') }}">
+    <!-- <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="bill.css"> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <img class="pic" src="static/logo.svg" alt="logo" width="50px" height="50px">
+
+        <div class="logotext">
+            <h2>Paperless Payment Generator</h2>
+        </div>
+        <div class="menu">
+            <ul class="opt">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/reg">Register</a></li>
+            </ul>
+        </div>
+        <button class="logout"><a id="log" href="/">Logout</a></button>
+    </div>
+
+    <!-- background -->
+    <div class="bg">
+        <img class="wave" src="static/wave.svg" alt="">
+    </div>
+
+    <a data-target="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span
+            class="glyphicon glyphicon-hand-up"></span>Add Product</a>
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <form class="modal-body" method="POST">
+                    <label>Product Name</label>
+                    <input type="text" name="proname" id="pname" class="form-control" />
+                    <br />
+                    <label>Price</label>
+                    <input type="text" name="proprice" id="price" class="form-control" />
+                    <br />
+                    <button id="login_button" class="btn btn-warning">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="cus">
+        <div class="fields">
+            <label for="">Customer Name</label>
+            <label for="">Mobile</label>
+            <label for="">Address</label>
+        </div>
+        <form action="" class="cdetails">
+            <input type="text" name="cname" id="cname">
+            <input type="tel" id="cmob">
+            <input type="text" id="cadd">
+            <button id="Add_Customer">Add</button>
+            <p id="customer_added"></p>
+        </form>
+    </div>
+
+    <div class="items">
+        <div class="fields">
+            <label for="">Product Name</label>
+            <label for="">Product Price</label>
+            <label for="">Quantity</label>
+            <label for="">Discount</label>
+            <label for="">Total Price</label>
+        </div>
+        <form action="" class="cdetails" onsubmit="return false">
+            <input type="text" id="*pname" name="pname">
+            <input type="number" id="*pri" name="pri">
+            <input type="number" id="*qua" name="qua">
+            <input type="number" id="*dis" name="dis">
+            <input type="number" id="*tpri" name="tpri">
+            <!-- <input type="submit" name="psubmit" id="*psubmit"> -->
+            <button id="*psubmit">submit</button>
+
+
+        </form>
+
+    </div>
+
+    <div class="tab">
+        <table class="header">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Discount</th>
+                    <th>Total Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+
+    <table id="content">
+
+    </table>
+    <div class="tpv">
+        <h2 id="*tpv"></h2>
+    </div>
+
+
+
+    <button class="gen" id="generate1">Generate Bill</button>
+
+    <form action="" id="billout">
+
+        <h1>Paperless payment Method</h1>
+        <h3>Customer Name :- <span class="cdet"></span></h3>
+
+        <h3>Mobile :- <span class="cdet"></span></h3>
+
+        <h3>Address :- <span class="cdet"></span></h3>
+
+
+        <p id="info"></p>
+
+
+        <h2 id="tpcopy"></h2>
+
+
+
+
+        <!-- <table id="content" id="table">
+
+        </table> -->
+
+        <button id="send"><a href="/send">Pay</a></button>
+        <button><a href="/sum">Summary</a></button>
+        <button class="billoutbutton">close</button>
+    </form>
+
+    <script src="static/js/bill.js"></script>
+</body>
+
+</html>

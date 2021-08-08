@@ -1,0 +1,94 @@
+/* for content only */
+.bg{
+    background-color: white;
+}
+.blob{
+    position: relative;
+    width: 750px;
+    margin-left: 170px;
+}
+.blob1{
+    position: absolute;
+    width: 700px;
+    right: 220px;
+}
+.sumblock{
+    position: absolute;
+    top: 184px;
+    left: 433px;
+    width: 500px;
+    height: 400px;
+    background-color:whitesmoke;
+    opacity: 85%;
+}
+.tick{
+    position: absolute;
+    top: 19px;
+    left: 217px;
+    width: 85px;
+    height: 85px;
+    filter: drop-shadow(2px 4px 8px #585858);
+}
+.amt{
+    position: absolute;
+    left: 214px;
+    top: 117px;
+    font-weight: bold;
+    font-size: 25px;
+}
+#msg{
+    position: absolute;
+    left: 195px;
+    top: 185px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.name{
+    position: absolute;
+    left: 190px;
+    top: 220px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.newt{
+    position: absolute;
+    left: 205px;
+    top: 295px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #ec14e1;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.log{
+    position: absolute;
+    left: 61px;
+    top: 295px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #e7eb12;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;
+}
+qr{
+    position: relative;
+}
+#qrtxt{
+    position: absolute;
+    font-size: 30px;
+    right: 225px;
+    top: 265px;
+    font-weight: bold;
+}
+.qrimg{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 221px;
+    top: 320px;
+    border: 1px solid black;
+}
+

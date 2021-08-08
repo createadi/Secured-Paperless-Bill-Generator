@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reg.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img class="pic" src="static/logo.svg" alt="logo" width="50px" height="50px">
+        <div class="logotext">
+            Paperless Payment Generator
+        </div>
+        <div class="menu">
+            <ul class="opt">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+        <button><a id="log" href="/login">Login</a></button>
+    </div>
+
+    <div class="reg-content">
+        <img src="static/bg.jpg" alt="" class="img1" required>
+        <div class="freg">
+            <img src="static/regi.jpg" alt="" id="fimg" required>
+            <form action="" class="reg" method="POST">
+
+                <label for="name">Name</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+
+                <label for="org">Organization</label><br>
+                <input type="text" id="forg" name="forg" required><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="femail" name="femail" required><br><br>
+
+                <label for="phone">Mobile/Tel</label><br>
+                <input type="tel" id="fphone" pattern="[+]{1}[0-9]{11,14}" name="fphone" required><br><br>
+
+                <label for="pwd">Password</label><br>
+                <input type="password" id="fpwd" name="fpwd" required>
+                <button class="but">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

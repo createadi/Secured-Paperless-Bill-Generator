@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock head %}
+{% block title %}Home{% endblock title %} 
+
+{% block body %}
+
+    <div class="content">
+        <img src="static/bg.jpg" alt="" class="img1">
+        <h2 class="rough1">PAPERLESS PAYMENT GENERATOR</h2>
+        <h3 class="rough2">WITH DATA SECURITY</h3>
+        <a class="start" href="/reg">Get Started</a>
+        <a class="learn" href="/about">Learn More</a>
+    </div>
+{% endblock body %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block head %}        {% endblock head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+
+        <title>{% block title %} {% endblock title %} - PPGwD</title>
+    </head>
+    <body>
+        <div class="container">
+            <img class="pic" src="static/logo.svg" alt="logo" width="50px" height="50px">
+            <div class="logotext">
+                Paperless Payment Generator
+            </div>
+            <div class="menu">
+                <ul class="opt">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/reg">Register</a></li>
+                </ul>
+            </div>
+            <button><a id="log" href="/login">Login</a></button>
+        </div>
+        {% block body %}
+    
+        {% endblock body %}
+    </body>
+</html>

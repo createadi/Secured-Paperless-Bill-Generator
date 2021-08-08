@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <img class="pic" src="static/logo.svg" alt="logo" width="50px" height="50px">
+        <div class="logotext">
+            Paperless Payment Generator
+        </div>
+        <div class="menu">
+            <ul class="opt">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/reg">Register</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="static/bg.jpg" alt="" class="img1">
+        <div class="login">
+            <div class="txt">LOGIN</div>
+            <form class="fields" action="" method="POST">
+                <input type="email" id="uname" name="uname" placeholder="Enter email"><br><br>
+                <input type="password" id="pwd" name="pwd" placeholder="Enter password">
+                <input type="submit" id="logsub" value="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

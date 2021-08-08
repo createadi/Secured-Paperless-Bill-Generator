@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sum.css') }}">
+{% endblock head %}
+{% block title %} Home{% endblock title %}
+
+{% block body %}
+
+<div class="bg">
+    <img src="static/blob.svg" class="blob" alt="">
+    <img src="static/blob (1).svg" class="blob1" alt="">
+</div>
+
+<div class="sumblock">
+    <div class="timg">
+        <img src="static/tick.png" class="tick" alt="">
+    </div>
+    <div class="amt">
+        Amount: <span id="amt"></span>
+    </div>
+    <p id="msg">Message Sent</p>
+    <div class="name">
+        Customer Name: <span id="sname"></span>
+    </div>
+    <button class="newt"><a href="/bill">New Transaction</a></button>
+    <button class="log"><a href="/">Logout</a></button>
+</div>
+
+<div class="qr">
+    <p id="qrtxt">QR CODE</p>
+    <img class="qrimg" src="static/qr.png" alt="">
+</div>
+<script src="static/js/sum.js"></script>
+{% endblock body %}

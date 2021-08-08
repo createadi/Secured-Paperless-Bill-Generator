@@ -1,0 +1,68 @@
+/* for content only */
+
+.img1{
+    width: 100%;
+}
+.content{
+    position: relative;
+}
+
+.abt{
+    position: absolute;
+    background-image: linear-gradient(62deg,rgb(15, 205, 238),rgb(245, 245, 11));
+    width: 700px;
+    height: 450px;
+    left: 400px;
+    top: 55px;
+    opacity: 80%;
+    border-radius: 10px;
+}
+p{
+    position: absolute;
+    padding: 20px;
+    text-align: justify;
+    font-size: 28px;
+}
+.icons{
+    position: absolute;
+    width: 1445.5px;
+    background-color: rgba(255, 255, 255, 0.425);
+    height: 127px;
+    left: 50px;
+    top: 518px;
+}
+#html{
+    position: absolute;
+    width: 124px;
+    height: 100px;
+    left: 150px;
+    bottom: 9px;
+}
+#css{
+    position: absolute;
+    width: 124px;
+    height: 100px;
+    bottom: 9px;
+    left: 403px;
+}
+#js{
+    position: absolute;
+    width: 199px;
+    height: 100px;
+    bottom: 9px;
+    right: 635px;
+}
+#flask{
+    right: 390px;
+    position: absolute;
+    width: 124px;
+    height: 100px;
+    bottom: 9px;
+}
+#sql{
+    right: 150px;
+    position: absolute;
+    width: 124px;
+    height: 100px;
+    bottom: 9px;
+}

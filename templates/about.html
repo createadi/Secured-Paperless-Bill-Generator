@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock head %}
+{% block title %} Home{% endblock title %} 
+
+{% block body %}
+
+    <div class="content">
+            <img src="static/bg.jpg" alt="" class="img">
+        <div class="abt">
+            <p>
+                “Paperless payment generator with data security” is fully interactive user interface web application for bill generation with great functionalities. 
+                This project is developed in order to minimize the use of papers for the simple receipt of purchased items by deploying sms-based payment receipts.
+                It provides functionality to generate bills of products which are listed or even not listed on the web app. It generates the bill and sends a text message to respective customers. 
+                This web application also incorporates the data security aspects by involving cryptographic algorithms so that it enables a security layer on the customer’s data.
+            </p>
+        </div>
+        <div class="icons">
+            <img src="static/html.png" alt="html" id="html">
+            <img src="static/css.png" alt="html" id="css">
+            <img src="static/js.png" alt="html" id="js">
+            <img src="static/flask.svg" alt="html" id="flask">
+            <img src="static/mysql.png" alt="html" id="sql">
+        </div>
+    </div>
+{% endblock body %}
