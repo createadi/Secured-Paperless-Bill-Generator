@@ -60,4 +60,5 @@ Refer to [SQLite](https://inloop.github.io/sqlite-viewer/).
 
 ## License & Copyright
 © Aditya Verma
+
 Licensed under [MIT License](LICENSE).
