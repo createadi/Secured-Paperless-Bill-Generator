@@ -57,3 +57,7 @@ Refer to [SQLite](https://inloop.github.io/sqlite-viewer/).
 ### Run the application
 
 `python app.py`
+
+## License & Copyright
+© Aditya Verma
+Licensed under [MIT License](LICENSE).
